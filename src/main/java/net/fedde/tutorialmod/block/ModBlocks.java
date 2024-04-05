@@ -39,7 +39,7 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .strength(1f).requiresCorrectToolForDrops(), UniformInt.of( 3, 7)));
 
-    public static final RegistryObject<Block> END_SAPPHIRE_ORE = registerBlock("end_stone_sapphire_ore",
+    public static final RegistryObject<Block> END_STONE_SAPPHIRE_ORE = registerBlock("end_stone_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of( 3, 6)));
 
