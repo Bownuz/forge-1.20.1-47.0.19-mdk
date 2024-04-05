@@ -1,6 +1,7 @@
 package net.fedde.tutorialmod.item;
 
 import net.fedde.tutorialmod.TutorialMod;
+import net.fedde.tutorialmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,10 @@ public class ModItems {
     public static final RegistryObject<Item> Raw_SAPPHIRE =
             ITEMS.register("raw_sapphire",
                     () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> METAL_DETECTOR =
+          ITEMS.register("metal_detector",
+                  () -> new MetalDetectorItem(new Item.Properties().durability(100)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
