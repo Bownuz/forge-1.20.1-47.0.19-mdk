@@ -20,7 +20,7 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.tutorial_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SAPPHIRE.get());
-                        output.accept(ModItems.Raw_SAPPHIRE.get());
+                        output.accept(ModItems.RAW_SAPPHIRE.get());
 
                         output.accept(ModItems.METAL_DETECTOR.get());
 
@@ -33,6 +33,16 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
                         output.accept(ModBlocks.SOUND_BLOCK.get());
+
+                        output.accept(ModBlocks.SAPPHIRE_FENCE.get());
+                        output.accept(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+                        output.accept(ModBlocks.SAPPHIRE_SLAB.get());
+                        output.accept(ModBlocks.SAPPHIRE_DOOR.get());
+                        output.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
+                        output.accept(ModBlocks.SAPPHIRE_STAIRS.get());
+                        output.accept(ModBlocks.SAPPHIRE_BUTTON.get());
+                        output.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.SAPPHIRE_WALL.get());
                     })
                     .build());
 
