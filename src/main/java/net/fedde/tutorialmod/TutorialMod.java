@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.fedde.tutorialmod.block.ModBlocks;
 import net.fedde.tutorialmod.item.ModCreativeModTabs;
 import net.fedde.tutorialmod.item.ModItems;
+import net.fedde.tutorialmod.sound.ModSounds;
 import net.fedde.tutorialmod.villager.ModVillagers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +34,8 @@ public class TutorialMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModVillagers.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
