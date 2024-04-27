@@ -2,6 +2,7 @@ package net.fedde.tutorialmod.item;
 
 import net.fedde.tutorialmod.TutorialMod;
 import net.fedde.tutorialmod.block.ModBlocks;
+import net.fedde.tutorialmod.sound.ModSounds;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -23,6 +24,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.RAW_SAPPHIRE.get());
 
                         output.accept(ModItems.METAL_DETECTOR.get());
+
+                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
 
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
