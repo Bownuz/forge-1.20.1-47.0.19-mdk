@@ -57,6 +57,15 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.SAPPHIRE_BUTTON.get());
                         output.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
                         output.accept(ModBlocks.SAPPHIRE_WALL.get());
+
+                        output.accept(ModBlocks.PINE_LOG.get());
+                        output.accept(ModBlocks.PINE_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_PINE_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_PINE_WOOD.get());
+                        output.accept(ModBlocks.PINE_PLANKS.get());
+                        output.accept(ModBlocks.PINE_LEAVES.get());
+
+                        output.accept(ModBlocks.PINE_SAPLING.get());
                     })
                     .build());
 

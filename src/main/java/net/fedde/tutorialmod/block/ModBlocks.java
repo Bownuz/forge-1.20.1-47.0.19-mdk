@@ -5,6 +5,7 @@ import net.fedde.tutorialmod.block.custom.ModFlammableRotatedPillerBlock;
 import net.fedde.tutorialmod.block.custom.SoundBlock;
 import net.fedde.tutorialmod.item.ModItems;
 import net.fedde.tutorialmod.sound.ModSounds;
+import net.fedde.tutorialmod.worldgen.tree.PineTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvent;
@@ -123,6 +124,9 @@ public class ModBlocks {
                     return 30;
                 }
             });
+
+    public static final RegistryObject<Block> PINE_SAPLING = registerBlock("pine_sapling",
+            () -> new SaplingBlock(new PineTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
