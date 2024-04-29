@@ -1,0 +1,62 @@
+{
+  "item.newmod.sapphire": "Sapphire",
+  "item.newmod.raw_sapphire": "Raw Sapphire",
+
+  "item.newmod.metal_detector": "Metal Detector",
+
+  "item.newmod.sapphire_sword": "Sapphire Sword",
+  "item.newmod.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.newmod.sapphire_axe": "Sapphire Axe",
+  "item.newmod.sapphire_shovel": "Sapphire Shovel",
+  "item.newmod.sapphire_hoe": "Sapphire Hoe",
+
+  "item.newmod.sapphire_helmet": "Sapphire Helmet",
+  "item.newmod.sapphire_chestplate": "Sapphire Chestplate",
+  "item.newmod.sapphire_leggings": "Sapphire Leggings",
+  "item.newmod.sapphire_boots": "Sapphire Boots",
+
+  "item.newmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.newmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "block.newmod.sapphire_block": "Block of Sapphire",
+  "block.newmod.raw_sapphire_block": "Block of Raw Sapphire",
+
+  "block.newmod.sapphire_ore": "Sapphire Ore",
+  "block.newmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.newmod.nether_sapphire_ore": "Nether Sapphire Ore",
+  "block.newmod.end_stone_sapphire_ore": "Endstone Sapphire Ore",
+
+  "block.newmod.mod_portal": "Portal Block",
+
+  "block.newmod.sound_block": "Sound Block",
+
+  "block.newmod.pine_sapling": "Pine Sapling",
+
+  "block.newmod.sapphire_stairs": "Sapphire Stairs",
+  "block.newmod.sapphire_slab": "Sapphire Slab",
+  "block.newmod.sapphire_button": "Sapphire Button",
+  "block.newmod.sapphire_pressure_plate": "Sapphire Pressure Plate",
+  "block.newmod.sapphire_fence": "Sapphire Fence",
+  "block.newmod.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.newmod.sapphire_wall": "Sapphire Wall",
+  "block.newmod.sapphire_door": "Sapphire Door",
+  "block.newmod.sapphire_trapdoor": "Sapphire Trapdoor",
+
+  "block.newmod.pine_log": "Pine Log",
+  "block.newmod.pine_planks": "Pine Planks",
+  "block.newmod.pine_wood": "Pine Wood",
+  "block.newmod.pine_leaves": "Pine Leaves",
+  "block.newmod.stripped_pine_log": "Stripped Pine Log",
+  "block.newmod.stripped_pine_wood": "Stripped Pine Wood",
+
+  "block.newmod.pine_sign": "Pine Sign",
+  "block.newmod.pine_hanging_sign": "Pine Hanging Sign",
+
+  "tooltip.newmod.metal_detector.tooltip": "Finds valuables underground",
+
+  "entity.minecraft.villager.newmod.soundmaster": "Sound Master",
+
+  "sounds.tutorialmod.metal_detector_found_ore": "Metal Detector Jingle",
+
+  "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
+}
