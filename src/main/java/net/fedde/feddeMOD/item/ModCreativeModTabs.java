@@ -40,6 +40,9 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.SAPPHIRE_SHOVEL.get());
                         output.accept(ModItems.SAPPHIRE_HOE.get());
 
+                        output.accept(ModItems.PINE_SIGN.get());
+                        output.accept(ModItems.PINE_HANGING_SIGN.get());
+
                         output.accept(ModBlocks.SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());

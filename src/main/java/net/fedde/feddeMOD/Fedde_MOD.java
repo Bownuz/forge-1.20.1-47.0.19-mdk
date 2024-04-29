@@ -5,9 +5,11 @@ import net.fedde.feddeMOD.block.ModBlocks;
 import net.fedde.feddeMOD.item.ModCreativeModTabs;
 import net.fedde.feddeMOD.item.ModItems;
 import net.fedde.feddeMOD.sound.ModSounds;
+import net.fedde.feddeMOD.util.ModWoodTypes;
 import net.fedde.feddeMOD.villager.ModVillagers;
 import net.fedde.feddeMOD.worldgen.biome.ModTerrablender;
 import net.fedde.feddeMOD.worldgen.biome.surface.ModSurfaceRules;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -73,7 +75,7 @@ public class Fedde_MOD {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            Sheets.addWoodType(ModWoodTypes.PINE);
         }
     }
 }

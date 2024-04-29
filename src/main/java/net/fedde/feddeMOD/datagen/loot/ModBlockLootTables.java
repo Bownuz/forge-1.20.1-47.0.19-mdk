@@ -60,6 +60,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.SAPPHIRE_SLAB.get(), block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
         this.add(ModBlocks.SAPPHIRE_DOOR.get(), block -> createDoorTable(ModBlocks.SAPPHIRE_DOOR.get()));
 
+        this.add(ModBlocks.PINE_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PINE_SIGN.get()));
+        this.add(ModBlocks.PINE_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PINE_SIGN.get()));
+        this.add(ModBlocks.PINE_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PINE_HANGING_SIGN.get()));
+        this.add(ModBlocks.PINE_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PINE_HANGING_SIGN.get()));
+
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block block, Item item){

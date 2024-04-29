@@ -1,11 +1,10 @@
 package net.fedde.feddeMOD.block;
 
 import net.fedde.feddeMOD.Fedde_MOD;
-import net.fedde.feddeMOD.block.custom.ModFlammableRotatedPillerBlock;
-import net.fedde.feddeMOD.block.custom.ModPortalBlock;
-import net.fedde.feddeMOD.block.custom.SoundBlock;
+import net.fedde.feddeMOD.block.custom.*;
 import net.fedde.feddeMOD.item.ModItems;
 import net.fedde.feddeMOD.sound.ModSounds;
+import net.fedde.feddeMOD.util.ModWoodTypes;
 import net.fedde.feddeMOD.worldgen.tree.PineTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -124,6 +123,16 @@ public class ModBlocks {
                     return 30;
                 }
             });
+
+    public static final RegistryObject<Block> PINE_SIGN = BLOCKS.register("pine_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.PINE));
+    public static final RegistryObject<Block> PINE_WALL_SIGN = BLOCKS.register("pine_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.PINE));
+
+    public static final RegistryObject<Block> PINE_HANGING_SIGN = BLOCKS.register("pine_hanging_sign",
+            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.PINE));
+    public static final RegistryObject<Block> PINE_WALL_HANGING_SIGN = BLOCKS.register("pine_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PINE));
 
     public static final RegistryObject<Block> PINE_SAPLING = registerBlock("pine_sapling",
             () -> new SaplingBlock(new PineTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));

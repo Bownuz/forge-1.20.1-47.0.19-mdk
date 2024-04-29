@@ -74,6 +74,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SAPPHIRE_BOOTS);
 
         saplingItem(ModBlocks.PINE_SAPLING);
+
+        simpleItem(ModItems.PINE_SIGN);
+        simpleItem(ModItems.PINE_HANGING_SIGN);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
