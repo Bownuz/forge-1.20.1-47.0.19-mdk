@@ -1,0 +1,6 @@
+// 1.20.1	2024-04-29T18:13:18.3073955	Tags for minecraft:item mod id newmod
+0bd7d78b6b4ce28cc912e8aa31c17e98b4825b4d data/minecraft/tags/items/creeper_drop_music_discs.json
+565aa45aa918104394f8a27208daa0b16738232f data/minecraft/tags/items/logs_that_burn.json
+0bd7d78b6b4ce28cc912e8aa31c17e98b4825b4d data/minecraft/tags/items/music_discs.json
+0ce95cbc26d96885cd750cc82314fa3990963a28 data/minecraft/tags/items/planks.json
+54d56fc90d108490dbafc7dbc3e0fabdb7d5277a data/minecraft/tags/items/trimmable_armor.json
