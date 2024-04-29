@@ -66,6 +66,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.PINE_LEAVES.get());
 
                         output.accept(ModBlocks.PINE_SAPLING.get());
+
+                        output.accept(ModBlocks.MOD_PORTAL.get());
                     })
                     .build());
 

@@ -2,6 +2,7 @@ package net.fedde.tutorialmod.block;
 
 import net.fedde.tutorialmod.TutorialMod;
 import net.fedde.tutorialmod.block.custom.ModFlammableRotatedPillerBlock;
+import net.fedde.tutorialmod.block.custom.ModPortalBlock;
 import net.fedde.tutorialmod.block.custom.SoundBlock;
 import net.fedde.tutorialmod.item.ModItems;
 import net.fedde.tutorialmod.sound.ModSounds;
@@ -127,6 +128,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PINE_SAPLING = registerBlock("pine_sapling",
             () -> new SaplingBlock(new PineTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+    public static final RegistryObject<Block> MOD_PORTAL = registerBlock("mod_portal",
+            () -> new ModPortalBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noLootTable().noOcclusion().noCollission()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

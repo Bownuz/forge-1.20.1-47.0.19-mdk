@@ -1,6 +1,7 @@
-// 1.20.1	2024-04-29T10:37:48.8152922	Block States: tutorialmod
+// 1.20.1	2024-04-29T11:22:40.7079752	Block States: tutorialmod
 a3ad172be3e203ff6840db063558f809a86ca15a assets/tutorialmod/blockstates/deepslate_sapphire_ore.json
 890efea75d7398469e0d7d5704472303c35fae62 assets/tutorialmod/blockstates/end_stone_sapphire_ore.json
+596765e65e592a2678d93f5eb4be193439fb33e9 assets/tutorialmod/blockstates/mod_portal.json
 0198f629d0db6eb40ebd91067bbe631626116b54 assets/tutorialmod/blockstates/nether_sapphire_ore.json
 b56d75abb778cdd35622d3977f825c2693e38777 assets/tutorialmod/blockstates/pine_leaves.json
 5615a2f4b8decb7e8e2bfef02d2e10cf95182e57 assets/tutorialmod/blockstates/pine_log.json
@@ -24,6 +25,7 @@ f6cd970826455b9f20c34835c56579f2cde3f2f8 assets/tutorialmod/blockstates/stripped
 c127412131c229accf94ac23dc4565b5039f7cf6 assets/tutorialmod/blockstates/stripped_pine_wood.json
 f98cb6175399c28ce46a77b4e68664303bc2c3d3 assets/tutorialmod/models/block/deepslate_sapphire_ore.json
 0c40efccb23d85e5bdf98a041a64a110359aed7c assets/tutorialmod/models/block/end_stone_sapphire_ore.json
+13fed721433921cd2b79654bdd3bdc84ff763fd3 assets/tutorialmod/models/block/mod_portal.json
 5df59719eaf8bf42bcfeee7e2154e96a044c2703 assets/tutorialmod/models/block/nether_sapphire_ore.json
 fe5a2155456cabb8f67e4afcb4a55b01fec6e87e assets/tutorialmod/models/block/pine_leaves.json
 834bd48f42f632324bbdd52d47b17f5bf5bda70e assets/tutorialmod/models/block/pine_log.json
@@ -71,6 +73,7 @@ d9f1262cb586a131f4ef9e6b15e1d052f934349c assets/tutorialmod/models/block/strippe
 04534c445561ed2adeed241368439b9951780a3b assets/tutorialmod/models/block/stripped_pine_wood_horizontal.json
 251495c94fbf35dd43cd773e6cf31533a8b72f09 assets/tutorialmod/models/item/deepslate_sapphire_ore.json
 bf5cdde3dfa3effdde9c4358ecb01c39922d7945 assets/tutorialmod/models/item/end_stone_sapphire_ore.json
+2ca3a24e36047206a627f88e98669476f48ec27f assets/tutorialmod/models/item/mod_portal.json
 81ecae58cc575e9ce9d7f21881bbccb6bbfb4432 assets/tutorialmod/models/item/nether_sapphire_ore.json
 2edec443a236a702d91b370bfa43f0dd789c7a6e assets/tutorialmod/models/item/pine_leaves.json
 f8a200f45709b5a3e854d5d6885a848e58c7a355 assets/tutorialmod/models/item/pine_log.json
