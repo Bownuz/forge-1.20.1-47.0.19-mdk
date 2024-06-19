@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "newmod:nether_sapphire_ore"
+          "Name": "newmod:sapphire_nether_ore"
         },
         "target": {
           "block": "minecraft:netherrack",

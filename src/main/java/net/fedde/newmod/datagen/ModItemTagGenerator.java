@@ -25,6 +25,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.SAPPHIRE_HELMET.get(), ModItems.SAPPHIRE_CHESTPLATE.get(), ModItems.SAPPHIRE_LEGGINGS.get(), ModItems.SAPPHIRE_BOOTS.get())
 
+                .add(ModItems.RUBY_HELMET.get(), ModItems.RUBY_CHESTPLATE.get(), ModItems.RUBY_LEGGINGS.get(), ModItems.RUBY_BOOTS.get())
                 .add(ModItems.PURPLE_HELMET.get(), ModItems.PURPLE_CHESTPLATE.get(), ModItems.PURPLE_LEGGINGS.get(), ModItems.PURPLE_BOOTS.get());
         this.tag(ItemTags.MUSIC_DISCS)
                 .add(ModItems.BAR_BRAWL_MUSIC_DISC.get());
@@ -46,11 +47,5 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINE_PLANKS.get().asItem())
 
                 .add(ModBlocks.PURPLE_PLANKS.get().asItem());
-
-        this.tag(ModTags.Items.CRAFTING_PURPLE_WOOD_TYPE)
-                .add(ModBlocks.STRIPPED_PURPLE_LOG.get().asItem())
-                .add(ModBlocks.PURPLE_LOG.get().asItem())
-                .add(ModBlocks.STRIPPED_PURPLE_WOOD.get().asItem())
-                .add(ModBlocks.PURPLE_WOOD.get().asItem());
     }
 }

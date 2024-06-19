@@ -22,7 +22,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ModTags.Blocks.METAL_DETECTOR_VALUABLES)
-                .add(ModBlocks.SAPPHIRE_ORE.get()).addTag(Tags.Blocks.ORES);
+                .add(ModBlocks.SAPPHIRE_ORE.get()).addTag(Tags.Blocks.ORES)
+                .add(ModBlocks.RUBY_ORE.get()).addTag(Tags.Blocks.ORES);
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SAPPHIRE_BLOCK.get(),
@@ -30,10 +31,20 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
                         ModBlocks.NETHER_SAPPHIRE_ORE.get(),
                         ModBlocks.END_STONE_SAPPHIRE_ORE.get(),
-                        ModBlocks.SOUND_BLOCK.get());
+                        ModBlocks.SOUND_BLOCK.get(),
+
+                        ModBlocks.RAW_RUBY_BLOCK.get(),
+                        ModBlocks.DEEPSLATE_RUBY_ORE.get(),
+                        ModBlocks.NETHER_RUBY_ORE.get(),
+                        ModBlocks.END_STONE_RUBY_ORE.get());
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.SAPPHIRE_BLOCK.get());
+                .add(ModBlocks.SAPPHIRE_BLOCK.get())
+
+                .add(ModBlocks.RUBY_ORE.get())
+                .add(ModBlocks.DEEPSLATE_RUBY_ORE.get())
+                .add(ModBlocks.NETHER_RUBY_ORE.get())
+                .add(ModBlocks.END_STONE_RUBY_ORE.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
@@ -78,11 +89,5 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINE_PLANKS.get())
 
                 .add(ModBlocks.PURPLE_PLANKS.get());
-
-//        this.tag(ModTags.Blocks.CRAFTING_PURPLE_WOOD_TYPE)
-//                .add(ModBlocks.STRIPPED_PURPLE_LOG.get())
-//                .add(ModBlocks.PURPLE_LOG.get())
-//                .add(ModBlocks.STRIPPED_PURPLE_WOOD.get())
-//                .add(ModBlocks.PURPLE_WOOD.get());
     }
 }

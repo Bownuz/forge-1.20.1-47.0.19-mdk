@@ -31,22 +31,22 @@ public class ModBlocks {
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
-    public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock("raw_sapphire_block",
+    public static final RegistryObject<Block> RAW_SAPPHIRE_BLOCK = registerBlock("sapphire_raw_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of( 3, 6)));
 
-    public static final RegistryObject<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
+    public static final RegistryObject<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("sapphire_deepslate_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(3f).requiresCorrectToolForDrops(), UniformInt.of( 3, 7)));
 
-    public static final RegistryObject<Block> NETHER_SAPPHIRE_ORE = registerBlock("nether_sapphire_ore",
+    public static final RegistryObject<Block> NETHER_SAPPHIRE_ORE = registerBlock("sapphire_nether_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
                     .strength(1f).requiresCorrectToolForDrops(), UniformInt.of( 3, 7)));
 
-    public static final RegistryObject<Block> END_STONE_SAPPHIRE_ORE = registerBlock("end_stone_sapphire_ore",
+    public static final RegistryObject<Block> END_STONE_SAPPHIRE_ORE = registerBlock("sapphire_end_stone_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of( 3, 6)));
 
@@ -230,6 +230,30 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PURPLE_TRAPDOOR = registerBlock("purple_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noCollission(), BlockSetType.STONE));
+
+
+
+    public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> RAW_RUBY_BLOCK = registerBlock("ruby_raw_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of( 3, 6)));
+
+    public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("ruby_deepslate_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+                    .strength(3f).requiresCorrectToolForDrops(), UniformInt.of( 3, 7)));
+
+    public static final RegistryObject<Block> NETHER_RUBY_ORE = registerBlock("ruby_nether_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(1f).requiresCorrectToolForDrops(), UniformInt.of( 3, 7)));
+
+    public static final RegistryObject<Block> END_STONE_RUBY_ORE = registerBlock("ruby_end_stone_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of( 3, 6)));
 
 
 

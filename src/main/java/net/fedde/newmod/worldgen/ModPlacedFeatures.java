@@ -23,6 +23,10 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> NETHER_SAPPHIRE_ORE_PLACES_KEY = registerKey("nether_sapphire_ore_placed");
     public static final ResourceKey<PlacedFeature> END_SAPPHIRE_ORE_PLACES_KEY = registerKey("end_sapphire_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> RUBYE_ORE_PLACES_KEY = registerKey("ruby_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_RUBY_ORE_PLACES_KEY = registerKey("nether_ruby_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_RUBY_ORE_PLACES_KEY = registerKey("end_ruby_ore_placed");
+
     public static final ResourceKey<PlacedFeature> PINE_PLACED_KEY = registerKey("pine_placed");
 
     public static void bootstrap (BootstapContext<PlacedFeature> context){
@@ -43,6 +47,23 @@ public class ModPlacedFeatures {
 
         register(context, PINE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINE_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2), ModBlocks.PINE_SAPLING.get()));
+
+
+        /**
+         * zelf gemaakt
+         */
+
+        register(context, RUBYE_ORE_PLACES_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_RUBY_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+        register(context, NETHER_RUBY_ORE_PLACES_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_RUBY_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+        register(context, END_RUBY_ORE_PLACES_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_RUBY_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey (String name){

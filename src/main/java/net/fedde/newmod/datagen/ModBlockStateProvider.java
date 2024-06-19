@@ -107,6 +107,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.PURPLE_DOOR.get()), modLoc("block/purple_door_bottom"), modLoc("block/purple_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.PURPLE_TRAPDOOR.get()), modLoc("block/purple_trapdoor"), true, "cutout");
 
+
+
+
+        blockWithItem(ModBlocks.RUBY_BLOCK);
+        blockWithItem(ModBlocks.RAW_RUBY_BLOCK);
+
+        blockWithItem(ModBlocks.RUBY_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_RUBY_ORE);
+        blockWithItem(ModBlocks.NETHER_RUBY_ORE);
+        blockWithItem(ModBlocks.END_STONE_RUBY_ORE);
     }
 
     public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {

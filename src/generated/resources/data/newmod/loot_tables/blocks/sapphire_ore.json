@@ -47,7 +47,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "newmod:raw_sapphire"
+              "name": "newmod:sapphire_raw"
             }
           ]
         }

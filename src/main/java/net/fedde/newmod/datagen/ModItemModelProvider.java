@@ -116,6 +116,22 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.PURPLE_FENCE_GATE);
 
         trapdoorItem(ModBlocks.PURPLE_TRAPDOOR);
+
+
+
+        simpleItem(ModItems.RUBY);
+        simpleItem(ModItems.RAW_RUBY);
+
+        handHeldItem(ModItems.RUBY_SWORD);
+        handHeldItem(ModItems.RUBY_PICKAXE);
+        handHeldItem(ModItems.RUBY_AXE);
+        handHeldItem(ModItems.RUBY_SHOVEL);
+        handHeldItem(ModItems.RUBY_HOE);
+
+        trimmedArmorItem(ModItems.RUBY_HELMET);
+        trimmedArmorItem(ModItems.RUBY_CHESTPLATE);
+        trimmedArmorItem(ModItems.RUBY_LEGGINGS);
+        trimmedArmorItem(ModItems.RUBY_BOOTS);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

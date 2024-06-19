@@ -1,7 +1,6 @@
-// 1.20.1	2024-06-19T15:36:36.5467163	Tags for minecraft:item mod id newmod
+// 1.20.1	2024-06-19T16:46:02.0236493	Tags for minecraft:item mod id newmod
 0bd7d78b6b4ce28cc912e8aa31c17e98b4825b4d data/minecraft/tags/items/creeper_drop_music_discs.json
 ee72d98e776fc21d2cbf2715ff97bcb172007ee6 data/minecraft/tags/items/logs_that_burn.json
 0bd7d78b6b4ce28cc912e8aa31c17e98b4825b4d data/minecraft/tags/items/music_discs.json
 56d1744115d14003774bb8dbed5da0d844b25ee5 data/minecraft/tags/items/planks.json
-b661fe8f9a6cba71ca22e7032ab41ba8e45a821c data/minecraft/tags/items/trimmable_armor.json
-6307496d87e1c3958b2e9965b5b053a5f39b50d2 data/newmod/tags/items/crafting_purple_wood_type.json
+99ac1bc871f8363488a8b380f56ba8578347880c data/minecraft/tags/items/trimmable_armor.json

@@ -21,7 +21,7 @@ public class ModItems {
             ITEMS.register("sapphire",
                     () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_SAPPHIRE =
-            ITEMS.register("raw_sapphire",
+            ITEMS.register("sapphire_raw",
                     () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> METAL_DETECTOR =
           ITEMS.register("metal_detector",
@@ -101,6 +101,37 @@ public class ModItems {
           () -> new ModBoatItem(false, ModBoatEntity.Type.PURPLE, new Item.Properties()));
   public static final RegistryObject<Item> PURPLE_CHEST_BOAT = ITEMS.register("purple_chest_boat",
           () -> new ModBoatItem(true, ModBoatEntity.Type.PURPLE, new Item.Properties()));
+
+
+
+
+
+  public static final RegistryObject<Item> RUBY =
+          ITEMS.register("ruby",
+                  () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> RAW_RUBY =
+          ITEMS.register("ruby_raw",
+                  () -> new Item(new Item.Properties()));
+
+  public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword",
+          () -> new SwordItem(ModToolTiers.RUBY, 4, 2, new Item.Properties()));
+  public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe",
+          () -> new PickaxeItem(ModToolTiers.RUBY, 1, 1, new Item.Properties()));
+  public static final RegistryObject<Item> RUBY_AXE = ITEMS.register("ruby_axe",
+          () -> new AxeItem(ModToolTiers.RUBY, 7, 1, new Item.Properties()));
+  public static final RegistryObject<Item> RUBY_SHOVEL = ITEMS.register("ruby_shovel",
+          () -> new ShovelItem(ModToolTiers.RUBY, 1, 0, new Item.Properties()));
+  public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe",
+          () -> new HoeItem(ModToolTiers.RUBY, 0, 0, new Item.Properties()));
+
+  public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register("ruby_helmet",
+          () -> new ModArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new Item.Properties()));
+  public static final RegistryObject<Item> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate",
+          () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+  public static final RegistryObject<Item> RUBY_LEGGINGS = ITEMS.register("ruby_leggings",
+          () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+  public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
+          () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -13,7 +13,7 @@ public class ModTags {
         public static final TagKey<Block> METAL_DETECTOR_VALUABLES = tag("metal_detector_valuables");
         public static final TagKey<Block> NEEDS_SAPPHIRE_TOOL = tag("needs_sapphire_tool");
         public static final TagKey<Block> NEEDS_PURPLE_TOOL = tag("needs_purple_tool");
-        public static final TagKey<Block> CRAFTING_PURPLE_WOOD_TYPE = tag("crafting_purple_wood_type");
+        public static final TagKey<Block> NEEDS_RUBY_TOOL = tag("needs_ruby_tool");
 
         private static TagKey<Block> tag(String name){
             return BlockTags.create(new ResourceLocation(NewMod.MOD_ID, name));
@@ -21,7 +21,6 @@ public class ModTags {
     }
 
     public static class Items{
-        public static final TagKey<Item> CRAFTING_PURPLE_WOOD_TYPE = tag("crafting_purple_wood_type");
         private static TagKey<Item> tag(String name){
             return ItemTags.create(new ResourceLocation(NewMod.MOD_ID, name));
         }

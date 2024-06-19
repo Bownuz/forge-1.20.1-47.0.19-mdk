@@ -30,6 +30,14 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_SAPPHIRE_ORE_KEY = registerKey("end_sapphire_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINE_KEY = registerKey("pine");
+
+    /**
+     * zelf gemaakt
+     */
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RUBY_ORE_KEY = registerKey("ruby_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_RUBY_ORE_KEY = registerKey("nether_ruby_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_RUBY_ORE_KEY = registerKey("end_ruby_ore");
+
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_KEY = registerKey("purple");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
@@ -54,6 +62,22 @@ public class ModConfiguredFeatures {
                         BlockStateProvider.simple(ModBlocks.PINE_LEAVES.get()),
                         new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                         new TwoLayersFeatureSize(1, 0, 2)).build());
+
+
+        /**
+         * zelf gemaakt
+         */
+
+
+        List<OreConfiguration.TargetBlockState> overworldRubyOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.RUBY_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_RUBY_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(overworldRubyOres, 9));
+        register(context, NETHER_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplacables,
+                ModBlocks.NETHER_RUBY_ORE.get().defaultBlockState(), 9));
+        register(context, END_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
+                ModBlocks.END_STONE_RUBY_ORE.get().defaultBlockState(), 9));
 
         register(context, PURPLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(ModBlocks.PURPLE_LOG.get()),

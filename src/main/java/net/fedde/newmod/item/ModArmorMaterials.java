@@ -15,7 +15,10 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.SAPPHIRE.get())),
 
     PURPLE("purple", 26, new int[]{ 5, 7, 5, 4 }, 25,
-    SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 2f, () -> Ingredient.of(ModBlocks.PURPLE_PLANKS.get()));
+    SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 2f, () -> Ingredient.of(ModBlocks.PURPLE_PLANKS.get())),
+
+    RUBY("ruby", 26, new int[]{ 5, 7, 5, 4 }, 25,
+    SoundEvents.ARMOR_EQUIP_CHAIN, 1f, 2f, () -> Ingredient.of(ModItems.RUBY.get()));
 
     private final String name;
     private final int durabilityMultiplier;

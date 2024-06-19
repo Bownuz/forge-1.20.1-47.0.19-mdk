@@ -84,9 +84,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.PURPLE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.PURPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
-//        this.add(ModBlocks.SAPPHIRE_SLAB.get(), block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
-//        this.add(ModBlocks.SAPPHIRE_DOOR.get(), block -> createDoorTable(ModBlocks.SAPPHIRE_DOOR.get()));
-
         this.add(ModBlocks.PURPLE_SIGN.get(), block ->
                 createSingleItemTable(ModItems.PURPLE_SIGN.get()));
         this.add(ModBlocks.PURPLE_WALL_SIGN.get(), block ->
@@ -107,6 +104,21 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.PURPLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.PURPLE_SLAB.get()));
         this.add(ModBlocks.PURPLE_DOOR.get(), block -> createDoorTable(ModBlocks.PURPLE_DOOR.get()));
+
+
+
+
+        this.dropSelf(ModBlocks.RUBY_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_RUBY_BLOCK.get());
+
+        this.add(ModBlocks.RUBY_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
+        this.add(ModBlocks.DEEPSLATE_RUBY_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
+        this.add(ModBlocks.NETHER_RUBY_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.NETHER_RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
+        this.add(ModBlocks.END_STONE_RUBY_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block block, Item item){

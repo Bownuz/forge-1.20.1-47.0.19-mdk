@@ -1,10 +1,14 @@
 {
   "values": [
     "newmod:sapphire_block",
-    "newmod:raw_sapphire_block",
-    "newmod:deepslate_sapphire_ore",
-    "newmod:nether_sapphire_ore",
-    "newmod:end_stone_sapphire_ore",
-    "newmod:sound_block"
+    "newmod:sapphire_raw_block",
+    "newmod:sapphire_deepslate_ore",
+    "newmod:sapphire_nether_ore",
+    "newmod:sapphire_end_stone_ore",
+    "newmod:sound_block",
+    "newmod:ruby_raw_block",
+    "newmod:ruby_deepslate_ore",
+    "newmod:ruby_nether_ore",
+    "newmod:ruby_end_stone_ore"
   ]
 }

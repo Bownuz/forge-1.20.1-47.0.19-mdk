@@ -1,5 +1,9 @@
 {
   "values": [
-    "newmod:sapphire_block"
+    "newmod:sapphire_block",
+    "newmod:ruby_ore",
+    "newmod:ruby_deepslate_ore",
+    "newmod:ruby_nether_ore",
+    "newmod:ruby_end_stone_ore"
   ]
 }

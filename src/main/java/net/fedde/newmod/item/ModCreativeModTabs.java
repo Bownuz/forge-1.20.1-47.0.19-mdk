@@ -81,15 +81,6 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.PURPLE_PLANKS.get()))
                     .title(Component.translatable("creativetab.created_mod_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-//                        output.accept(ModItems.SAPPHIRE.get());
-//                        output.accept(ModItems.RAW_SAPPHIRE.get());
-//
-//                        output.accept(ModItems.METAL_DETECTOR.get());
-//
-//                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
-//
-//                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
-//                        output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
 
                         output.accept(ModItems.PURPLE_HELMET.get());
                         output.accept(ModItems.PURPLE_CHESTPLATE.get());
@@ -107,13 +98,6 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.PURPLE_BOAT.get());
                         output.accept(ModItems.PURPLE_CHEST_BOAT.get());
-
-//                        output.accept(ModBlocks.SAPPHIRE_ORE.get());
-//                        output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
-//                        output.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
-//                        output.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
-
-//                        output.accept(ModBlocks.SOUND_BLOCK.get());
 
                         output.accept(ModBlocks.PURPLE_FENCE.get());
                         output.accept(ModBlocks.PURPLE_FENCE_GATE.get());
@@ -134,7 +118,31 @@ public class ModCreativeModTabs {
 
                         output.accept(ModBlocks.PURPLE_SAPLING.get());
 
-//                        output.accept(ModBlocks.MOD_PORTAL.get());
+
+
+
+
+                        output.accept(ModItems.RUBY.get());
+                        output.accept(ModItems.RAW_RUBY.get());
+
+                        output.accept(ModBlocks.RUBY_BLOCK.get());
+                        output.accept(ModBlocks.RAW_RUBY_BLOCK.get());
+
+                        output.accept(ModItems.RUBY_HELMET.get());
+                        output.accept(ModItems.RUBY_CHESTPLATE.get());
+                        output.accept(ModItems.RUBY_LEGGINGS.get());
+                        output.accept(ModItems.RUBY_BOOTS.get());
+
+                        output.accept(ModItems.RUBY_SWORD.get());
+                        output.accept(ModItems.RUBY_PICKAXE.get());
+                        output.accept(ModItems.RUBY_AXE.get());
+                        output.accept(ModItems.RUBY_SHOVEL.get());
+                        output.accept(ModItems.RUBY_HOE.get());
+
+                        output.accept(ModBlocks.RUBY_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
+                        output.accept(ModBlocks.NETHER_RUBY_ORE.get());
+                        output.accept(ModBlocks.END_STONE_RUBY_ORE.get());
                     })
                     .build());
 
