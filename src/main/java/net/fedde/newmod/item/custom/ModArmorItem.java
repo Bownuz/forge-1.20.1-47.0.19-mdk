@@ -13,9 +13,14 @@ import net.minecraft.world.level.Level;
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
-    private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
+    private static final Map<ArmorMaterial, MobEffectInstance> FULL_SAPPHIRE_ARMOR_ON =
             (new ImmutableBiMap.Builder<ArmorMaterial, MobEffectInstance>()
                     .put(ModArmorMaterials.SAPPHIRE, new MobEffectInstance(MobEffects.NIGHT_VISION, 200, 1,
+                            false, false, true)).build());
+
+    private static final Map<ArmorMaterial, MobEffectInstance> FULL_PURPLE_ARMOR_ON =
+            (new ImmutableBiMap.Builder<ArmorMaterial, MobEffectInstance>()
+                    .put(ModArmorMaterials.PURPLE, new MobEffectInstance(MobEffects.LUCK, 200, 1,
                             false, false, true)).build());
 
     public ModArmorItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
@@ -32,7 +37,15 @@ public class ModArmorItem extends ArmorItem {
     }
 
     private void evaluateArmorEffects(Player player){
-        for (Map.Entry<ArmorMaterial, MobEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
+        for (Map.Entry<ArmorMaterial, MobEffectInstance> entry : FULL_SAPPHIRE_ARMOR_ON.entrySet()) {
+            ArmorMaterial mapArmorMaterial = entry.getKey();
+            MobEffectInstance mapStatusEffect = entry.getValue();
+
+            if (hasCorrectArmorOn(mapArmorMaterial, player)){
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            }
+        }
+        for (Map.Entry<ArmorMaterial, MobEffectInstance> entry : FULL_PURPLE_ARMOR_ON.entrySet()) {
             ArmorMaterial mapArmorMaterial = entry.getKey();
             MobEffectInstance mapStatusEffect = entry.getValue();
 

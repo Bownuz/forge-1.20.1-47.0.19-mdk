@@ -1,6 +1,7 @@
 package net.fedde.newmod.item;
 
 import net.fedde.newmod.NewMod;
+import net.fedde.newmod.block.ModBlocks;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -11,7 +12,10 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     SAPPHIRE("sapphire", 26, new int[]{ 5, 7, 5, 4 }, 25,
-            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.SAPPHIRE.get()));
+            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.SAPPHIRE.get())),
+
+    PURPLE("purple", 26, new int[]{ 5, 7, 5, 4 }, 25,
+    SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 2f, () -> Ingredient.of(ModBlocks.PURPLE_PLANKS.get()));
 
     private final String name;
     private final int durabilityMultiplier;

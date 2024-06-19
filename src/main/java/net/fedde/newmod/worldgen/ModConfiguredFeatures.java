@@ -30,6 +30,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_SAPPHIRE_ORE_KEY = registerKey("end_sapphire_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> PINE_KEY = registerKey("pine");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_KEY = registerKey("purple");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -53,6 +54,13 @@ public class ModConfiguredFeatures {
                         BlockStateProvider.simple(ModBlocks.PINE_LEAVES.get()),
                         new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
                         new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, PURPLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.PURPLE_LOG.get()),
+                new StraightTrunkPlacer(8, 5, 4),
+                BlockStateProvider.simple(ModBlocks.PURPLE_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(5), ConstantInt.of(4), 3),
+                new TwoLayersFeatureSize(2, 0, 4)).build());
     }
 
 

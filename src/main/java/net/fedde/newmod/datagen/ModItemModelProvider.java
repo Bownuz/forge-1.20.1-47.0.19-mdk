@@ -77,6 +77,45 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.PINE_SIGN);
         simpleItem(ModItems.PINE_HANGING_SIGN);
+
+        simpleItem(ModItems.PINE_BOAT);
+        simpleItem(ModItems.PINE_CHEST_BOAT);
+
+        /**
+         * zelf gemaakt
+         */
+
+        saplingItem(ModBlocks.PURPLE_SAPLING);
+
+        simpleItem(ModItems.PURPLE_SIGN);
+        simpleItem(ModItems.PURPLE_HANGING_SIGN);
+
+        handHeldItem(ModItems.PURPLE_SWORD);
+        handHeldItem(ModItems.PURPLE_PICKAXE);
+        handHeldItem(ModItems.PURPLE_AXE);
+        handHeldItem(ModItems.PURPLE_SHOVEL);
+        handHeldItem(ModItems.PURPLE_HOE);
+
+        trimmedArmorItem(ModItems.PURPLE_HELMET);
+        trimmedArmorItem(ModItems.PURPLE_CHESTPLATE);
+        trimmedArmorItem(ModItems.PURPLE_LEGGINGS);
+        trimmedArmorItem(ModItems.PURPLE_BOOTS);
+
+        simpleItem(ModItems.PURPLE_BOAT);
+        simpleItem(ModItems.PURPLE_CHEST_BOAT);
+
+        simpleBlockItem(ModBlocks.PURPLE_DOOR);
+
+        fenceItem(ModBlocks.PURPLE_FENCE, ModBlocks.PURPLE_PLANKS);
+        buttonItem(ModBlocks.PURPLE_BUTTON, ModBlocks.PURPLE_PLANKS);
+        wallItem(ModBlocks.PURPLE_WALL, ModBlocks.PURPLE_PLANKS);
+
+        evenSimplerBlockItem(ModBlocks.PURPLE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.PURPLE_SLAB);
+        evenSimplerBlockItem(ModBlocks.PURPLE_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.PURPLE_FENCE_GATE);
+
+        trapdoorItem(ModBlocks.PURPLE_TRAPDOOR);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

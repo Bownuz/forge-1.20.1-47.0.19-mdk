@@ -69,6 +69,44 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.PINE_WALL_HANGING_SIGN.get(), block ->
                 createSingleItemTable(ModItems.PINE_HANGING_SIGN.get()));
 
+
+        /**
+         * zelf gemaakt
+         */
+        this.dropSelf(ModBlocks.PURPLE_LOG.get());
+        this.dropSelf(ModBlocks.PURPLE_PLANKS.get());
+        this.dropSelf(ModBlocks.PURPLE_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PURPLE_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_PURPLE_WOOD.get());
+
+        this.dropSelf(ModBlocks.PURPLE_SAPLING.get());
+
+        this.add(ModBlocks.PURPLE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.PURPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+//        this.add(ModBlocks.SAPPHIRE_SLAB.get(), block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
+//        this.add(ModBlocks.SAPPHIRE_DOOR.get(), block -> createDoorTable(ModBlocks.SAPPHIRE_DOOR.get()));
+
+        this.add(ModBlocks.PURPLE_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PURPLE_SIGN.get()));
+        this.add(ModBlocks.PURPLE_WALL_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PURPLE_SIGN.get()));
+        this.add(ModBlocks.PURPLE_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PURPLE_HANGING_SIGN.get()));
+        this.add(ModBlocks.PURPLE_WALL_HANGING_SIGN.get(), block ->
+                createSingleItemTable(ModItems.PURPLE_HANGING_SIGN.get()));
+
+
+        this.dropSelf(ModBlocks.PURPLE_STAIRS.get());
+        this.dropSelf(ModBlocks.PURPLE_BUTTON.get());
+        this.dropSelf(ModBlocks.PURPLE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.PURPLE_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.PURPLE_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.PURPLE_FENCE.get());
+        this.dropSelf(ModBlocks.PURPLE_WALL.get());
+
+        this.add(ModBlocks.PURPLE_SLAB.get(), block -> createSlabItemTable(ModBlocks.PURPLE_SLAB.get()));
+        this.add(ModBlocks.PURPLE_DOOR.get(), block -> createDoorTable(ModBlocks.PURPLE_DOOR.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block block, Item item){

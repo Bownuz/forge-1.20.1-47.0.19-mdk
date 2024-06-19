@@ -65,6 +65,48 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         hangingSignBlock(ModBlocks.PINE_HANGING_SIGN.get(), ModBlocks.PINE_WALL_HANGING_SIGN.get(),
                 blockTexture(ModBlocks.PINE_PLANKS.get()));
+
+        /**
+         * zelf gemaakt
+         */
+
+
+        logBlock((RotatedPillarBlock) ModBlocks.PURPLE_LOG.get());
+        axisBlock((RotatedPillarBlock) ModBlocks.PURPLE_WOOD.get(), blockTexture(ModBlocks.PURPLE_LOG.get()), blockTexture(ModBlocks.PURPLE_LOG.get()));
+
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_PURPLE_LOG.get(), blockTexture(ModBlocks.STRIPPED_PURPLE_LOG.get()),
+                new ResourceLocation(NewMod.MOD_ID, "block/stripped_purple_log_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_PURPLE_WOOD.get(), blockTexture(ModBlocks.STRIPPED_PURPLE_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PURPLE_LOG.get()));
+
+        blockItem(ModBlocks.PURPLE_LOG);
+        blockItem(ModBlocks.STRIPPED_PURPLE_LOG);
+        blockItem(ModBlocks.PURPLE_WOOD);
+        blockItem(ModBlocks.STRIPPED_PURPLE_WOOD);
+
+        blockWithItem(ModBlocks.PURPLE_PLANKS);
+
+        leavesBlock(ModBlocks.PURPLE_LEAVES);
+
+        saplingBlock(ModBlocks.PURPLE_SAPLING);
+
+        signBlock(((StandingSignBlock) ModBlocks.PURPLE_SIGN.get()), ((WallSignBlock) ModBlocks.PURPLE_WALL_SIGN.get()),
+                blockTexture(ModBlocks.PURPLE_PLANKS.get()));
+
+        hangingSignBlock(ModBlocks.PURPLE_HANGING_SIGN.get(), ModBlocks.PURPLE_WALL_HANGING_SIGN.get(),
+                blockTexture(ModBlocks.PURPLE_PLANKS.get()));
+
+
+        stairsBlock(((StairBlock) ModBlocks.PURPLE_STAIRS.get()), blockTexture(ModBlocks.PURPLE_PLANKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.PURPLE_SLAB.get()), blockTexture(ModBlocks.PURPLE_PLANKS.get()), blockTexture(ModBlocks.PURPLE_PLANKS.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.PURPLE_BUTTON.get()), blockTexture(ModBlocks.PURPLE_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.PURPLE_PRESSURE_PLATE.get()), blockTexture(ModBlocks.PURPLE_PLANKS.get()));
+        fenceBlock(((FenceBlock) ModBlocks.PURPLE_FENCE.get()), blockTexture(ModBlocks.PURPLE_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.PURPLE_FENCE_GATE.get()), blockTexture(ModBlocks.PURPLE_PLANKS.get()));
+        wallBlock(((WallBlock) ModBlocks.PURPLE_WALL.get()), blockTexture(ModBlocks.PURPLE_PLANKS.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.PURPLE_DOOR.get()), modLoc("block/purple_door_bottom"), modLoc("block/purple_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.PURPLE_TRAPDOOR.get()), modLoc("block/purple_trapdoor"), true, "cutout");
+
     }
 
     public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {

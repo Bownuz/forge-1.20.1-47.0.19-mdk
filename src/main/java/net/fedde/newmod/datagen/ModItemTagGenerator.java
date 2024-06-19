@@ -22,7 +22,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.SAPPHIRE_HELMET.get(), ModItems.SAPPHIRE_CHESTPLATE.get(), ModItems.SAPPHIRE_LEGGINGS.get(), ModItems.SAPPHIRE_BOOTS.get());
+                .add(ModItems.SAPPHIRE_HELMET.get(), ModItems.SAPPHIRE_CHESTPLATE.get(), ModItems.SAPPHIRE_LEGGINGS.get(), ModItems.SAPPHIRE_BOOTS.get())
+
+                .add(ModItems.PURPLE_HELMET.get(), ModItems.PURPLE_CHESTPLATE.get(), ModItems.PURPLE_LEGGINGS.get(), ModItems.PURPLE_BOOTS.get());
         this.tag(ItemTags.MUSIC_DISCS)
                 .add(ModItems.BAR_BRAWL_MUSIC_DISC.get());
         this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS)
@@ -32,9 +34,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINE_LOG.get().asItem())
                 .add(ModBlocks.STRIPPED_PINE_WOOD.get().asItem())
                 .add(ModBlocks.PINE_WOOD.get().asItem())
-                .add(ModBlocks.STRIPPED_PINE_LOG.get().asItem());
+                .add(ModBlocks.STRIPPED_PINE_LOG.get().asItem())
+
+                .add(ModBlocks.PURPLE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PURPLE_WOOD.get().asItem())
+                .add(ModBlocks.PURPLE_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_PURPLE_LOG.get().asItem());
 
         this.tag(ItemTags.PLANKS)
-                .add(ModBlocks.PINE_PLANKS.get().asItem());
+                .add(ModBlocks.PINE_PLANKS.get().asItem())
+
+                .add(ModBlocks.PURPLE_PLANKS.get().asItem());
     }
 }

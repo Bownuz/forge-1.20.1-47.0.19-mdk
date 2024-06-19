@@ -8,9 +8,19 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import org.jetbrains.annotations.Nullable;
 
 public class PineTreeGrower extends AbstractTreeGrower {
+    private String tree;
+
+    public PineTreeGrower (String tree){
+        this.tree = tree;
+    }
+
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource randomSource, boolean b) {
-        return ModConfiguredFeatures.PINE_KEY;
+        if (tree.equals("pine")) {
+            return ModConfiguredFeatures.PINE_KEY;
+        } else {
+            return ModConfiguredFeatures.PURPLE_KEY;
+        }
     }
 }

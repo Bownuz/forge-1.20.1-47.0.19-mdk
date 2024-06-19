@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:chest"
+    },
+    {
+      "item": "newmod:purple_boat"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "newmod:purple_chest_boat"
+  }
+}

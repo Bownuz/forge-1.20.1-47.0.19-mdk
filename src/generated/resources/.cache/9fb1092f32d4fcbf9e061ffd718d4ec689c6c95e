@@ -1,4 +1,8 @@
-// 1.20.1	2024-04-29T18:13:18.3063985	Recipes
+// 1.20.1	2024-06-19T11:50:35.3897878	Recipes
+adbda27ac2b9dfe73f9a29ad3fe377c039f41106 data/newmod/advancements/recipes/misc/purple_boat.json
+8a99237d2ccf6df4ae14c658a88b72dbeb470bc0 data/newmod/advancements/recipes/misc/purple_chest_boat.json
+54c23eaafbc04a372c1722bf1fc30f78fa165a8d data/newmod/advancements/recipes/misc/purple_hanging_sign.json
+8e6504f613a0f13c51bf365ba0e589bccc8a7c1e data/newmod/advancements/recipes/misc/purple_sign.json
 0f9dc281fd60ca1721b747aea153fe6492b3be88 data/newmod/advancements/recipes/misc/sapphire.json
 2678b090b006e4dbdffbc64f1e7ecb22c5dac43f data/newmod/advancements/recipes/misc/sapphire_block.json
 effb868acae6000a6237e415b6d54ef1c433d61f data/newmod/advancements/recipes/misc/sapphire_from_blasting_deepslate_sapphire_ore.json
@@ -11,6 +15,10 @@ ad7be01f980bebd664a708b0b42e27fe2f41f4cb data/newmod/advancements/recipes/misc/s
 9c14a02fbb063f7a161aacf3f622e24fa527091a data/newmod/advancements/recipes/misc/sapphire_from_smelting_nether_sapphire_ore.json
 6f4d27a8f8b665b258ddf8906dc960ec591b32ba data/newmod/advancements/recipes/misc/sapphire_from_smelting_raw_sapphire.json
 38afd14b9be425acb05deadcde3db4974e316b45 data/newmod/advancements/recipes/misc/sapphire_from_smelting_sapphire_ore.json
+e23a6809c09c2de0baeeb5fc225618983ee5628e data/newmod/recipes/purple_boat.json
+5d9c4f5cc47bd00644ed9e22816e1c897a702e0b data/newmod/recipes/purple_chest_boat.json
+02822a67580f0e6dfd62671cb2d609d6303e8c96 data/newmod/recipes/purple_hanging_sign.json
+417f77be07357b272ffdcb9d51bbc26aac185d10 data/newmod/recipes/purple_sign.json
 bf540a10eea023953e12a3d44b334a2729cbbf36 data/newmod/recipes/sapphire.json
 952a8fcdc37f3a800187b496204838c2e76c2417 data/newmod/recipes/sapphire_block.json
 3696613c3c0afe4fcc4dd0f78d4cc21d90f781c0 data/newmod/recipes/sapphire_from_blasting_deepslate_sapphire_ore.json

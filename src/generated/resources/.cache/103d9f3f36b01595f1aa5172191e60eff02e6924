@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-29T18:13:18.3073955	Registries
+// 1.20.1	2024-06-19T11:36:34.1260965	Registries
 d8555ed2eedd0cce688a9403eac323345ce0003c data/newmod/dimension/feddedim.json
 79e5f503c097e53a2c0358e86cfcd7c7b909b0bd data/newmod/dimension_type/feddedim_type.json
 b07fcd4117426483e11c5c9a30e2cddf06d83b17 data/newmod/forge/biome_modifier/add_end_sapphire_ore.json
@@ -9,6 +9,7 @@ fcbbfe40e5238e6ee3a93f930e508150d228a3de data/newmod/worldgen/biome/warped_biome
 68b481743242fc5c521628845f45634436744fac data/newmod/worldgen/configured_feature/end_sapphire_ore.json
 3c2566ec75411dc1809cabc0f5069a608132fee0 data/newmod/worldgen/configured_feature/nether_sapphire_ore.json
 b2cd809a147bf4f7ffdef31588a313d325a14a67 data/newmod/worldgen/configured_feature/pine.json
+08e4fad3d35fb857fafbcb218232c2436ed83226 data/newmod/worldgen/configured_feature/purple.json
 6e565021463526bd9ad474c217d22584adca0d9e data/newmod/worldgen/configured_feature/sapphire_ore.json
 beea5eb74f713d5aa274193322bddd7fbd95f573 data/newmod/worldgen/placed_feature/end_sapphire_ore_placed.json
 a85e87f6fcced88605092fb1ea516f47af393d2b data/newmod/worldgen/placed_feature/nether_sapphire_ore_placed.json

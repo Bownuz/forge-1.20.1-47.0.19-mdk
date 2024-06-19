@@ -2,8 +2,10 @@ package net.fedde.newmod.item;
 
 import net.fedde.newmod.NewMod;
 import net.fedde.newmod.block.ModBlocks;
+import net.fedde.newmod.entity.custom.ModBoatEntity;
 import net.fedde.newmod.item.custom.MetalDetectorItem;
 import net.fedde.newmod.item.custom.ModArmorItem;
+import net.fedde.newmod.item.custom.ModBoatItem;
 import net.fedde.newmod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -51,9 +53,54 @@ public class ModItems {
     public static final RegistryObject<Item> PINE_HANGING_SIGN = ITEMS.register("pine_hanging_sign",
             () -> new HangingSignItem(ModBlocks.PINE_HANGING_SIGN.get(), ModBlocks.PINE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
+  public static final RegistryObject<Item> PINE_BOAT = ITEMS.register("pine_boat",
+          () -> new ModBoatItem(false, ModBoatEntity.Type.PINE, new Item.Properties()));
+  public static final RegistryObject<Item> PINE_CHEST_BOAT = ITEMS.register("pine_chest_boat",
+          () -> new ModBoatItem(true, ModBoatEntity.Type.PINE, new Item.Properties()));
+
+
     public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new RecordItem(6, ModSounds.BAR_BRAWL, new Item.Properties().stacksTo(1), 2440));
 
+
+    /**
+     * zelf gemaakt
+     */
+
+//    public static final RegistryObject<Item> PURPLE_PLANKS =
+//            ITEMS.register("purple_planks",
+//                    () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PURPLE_SWORD = ITEMS.register("purple_sword",
+            () -> new SwordItem(ModToolTiers.PURPLE, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> PURPLE_PICKAXE = ITEMS.register("purple_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.PURPLE, 1, 1, new Item.Properties()));
+    public static final RegistryObject<Item> PURPLE_AXE = ITEMS.register("purple_axe",
+            () -> new AxeItem(ModToolTiers.PURPLE, 7, 1, new Item.Properties()));
+    public static final RegistryObject<Item> PURPLE_SHOVEL = ITEMS.register("purple_shovel",
+            () -> new ShovelItem(ModToolTiers.PURPLE, 1, 0, new Item.Properties()));
+    public static final RegistryObject<Item> PURPLE_HOE = ITEMS.register("purple_hoe",
+            () -> new HoeItem(ModToolTiers.PURPLE, 0, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> PURPLE_HELMET = ITEMS.register("purple_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.PURPLE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> PURPLE_CHESTPLATE = ITEMS.register("purple_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.PURPLE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> PURPLE_LEGGINGS = ITEMS.register("purple_leggings",
+            () -> new ArmorItem(ModArmorMaterials.PURPLE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> PURPLE_BOOTS = ITEMS.register("purple_boots",
+            () -> new ArmorItem(ModArmorMaterials.PURPLE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+
+    public static final RegistryObject<Item> PURPLE_SIGN = ITEMS.register("purple_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.PURPLE_SIGN.get(), ModBlocks.PURPLE_WALL_SIGN.get()));
+    public static final RegistryObject<Item> PURPLE_HANGING_SIGN = ITEMS.register("purple_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.PURPLE_HANGING_SIGN.get(), ModBlocks.PURPLE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+  public static final RegistryObject<Item> PURPLE_BOAT = ITEMS.register("purple_boat",
+          () -> new ModBoatItem(false, ModBoatEntity.Type.PURPLE, new Item.Properties()));
+  public static final RegistryObject<Item> PURPLE_CHEST_BOAT = ITEMS.register("purple_chest_boat",
+          () -> new ModBoatItem(true, ModBoatEntity.Type.PURPLE, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

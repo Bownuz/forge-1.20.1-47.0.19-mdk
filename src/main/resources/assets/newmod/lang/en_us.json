@@ -18,6 +18,9 @@
   "item.newmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.newmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
+  "item.newmod.pine_boat": "Pine Boat",
+  "item.newmod.pine_chest_boat": "Pine Chest Boat",
+
   "block.newmod.sapphire_block": "Block of Sapphire",
   "block.newmod.raw_sapphire_block": "Block of Raw Sapphire",
 
@@ -55,8 +58,51 @@
   "tooltip.newmod.metal_detector.tooltip": "Finds valuables underground",
 
   "entity.minecraft.villager.newmod.soundmaster": "Sound Master",
+  "entity.newmod.mod_chest_boat": "Boat with Chest",
 
   "sounds.tutorialmod.metal_detector_found_ore": "Metal Detector Jingle",
 
-  "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
+  "creativetab.tutorial_tab": "Sapphire Tutorial Tab",
+
+
+
+
+
+  "item.newmod.purple_sword": "Purple Sword",
+  "item.newmod.purple_pickaxe": "Purple Pickaxe",
+  "item.newmod.purple_axe": "Purple Axe",
+  "item.newmod.purple_shovel": "Purple Shovel",
+  "item.newmod.purple_hoe": "Purple Hoe",
+
+  "item.newmod.purple_helmet": "Purple Helmet",
+  "item.newmod.purple_chestplate": "Purple Chestplate",
+  "item.newmod.purple_leggings": "Purple Leggings",
+  "item.newmod.purple_boots": "Purple Boots",
+
+  "item.newmod.purple_boat": "Purple Boat",
+  "item.newmod.purple_chest_boat": "Purple Chest Boat",
+
+  "block.newmod.purple_sapling": "Purple Sapling",
+
+  "block.newmod.purple_log": "Purple Log",
+  "block.newmod.purple_planks": "Purple Planks",
+  "block.newmod.purple_wood": "Purple Wood",
+  "block.newmod.purple_leaves": "Purple Leaves",
+  "block.newmod.stripped_purple_log": "Stripped Purple Log",
+  "block.newmod.stripped_purple_wood": "Stripped Purple Wood",
+
+  "block.newmod.purple_sign": "Purple Sign",
+  "block.newmod.purple_hanging_sign": "Purple Hanging Sign",
+
+  "block.newmod.purple_stairs": "Purple Stairs",
+  "block.newmod.purple_slab": "Purple Slab",
+  "block.newmod.purple_button": "Purple Button",
+  "block.newmod.purple_pressure_plate": "Purple Pressure Plate",
+  "block.newmod.purple_fence": "Purple Fence",
+  "block.newmod.purple_fence_gate": "Purple Fence Gate",
+  "block.newmod.purple_wall": "Purple Wall",
+  "block.newmod.purple_door": "Purple Door",
+  "block.newmod.purple_trapdoor": "Purple Trapdoor",
+
+  "creativetab.created_mod_tab": "Own Tutorial Tab"
 }

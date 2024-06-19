@@ -1,13 +1,13 @@
-// 1.20.1	2024-04-29T18:13:18.3004146	Tags for minecraft:block mod id newmod
+// 1.20.1	2024-05-11T23:46:09.5995346	Tags for minecraft:block mod id newmod
 9a9aed776a94dd944ff01ceab533609e45301be5 data/forge/tags/blocks/needs_netherite_tool.json
-f253e6d7c24a618daa6735a03e76b8c34caf0c52 data/minecraft/tags/blocks/fences.json
-65cdf01618760ef2799eb20aed173d17b09df0ea data/minecraft/tags/blocks/fence_gates.json
-f5a237b68c68b648f561b2e8adebcbf9f8ad3f72 data/minecraft/tags/blocks/logs_that_burn.json
+54a21622e96ef55cf7b39ea13fbb8251d193befc data/minecraft/tags/blocks/fences.json
+1f37fffc4b9a04a19b56b29575a820941847196a data/minecraft/tags/blocks/fence_gates.json
+0a528a1fa722f6ff599826da16b11a7d886cb038 data/minecraft/tags/blocks/logs_that_burn.json
 9c4451efd49e249ea1aec5e8fcadcace213fc856 data/minecraft/tags/blocks/mineable/pickaxe.json
 615320279a04729f6d2c1934a9ac80a5788b0b91 data/minecraft/tags/blocks/needs_diamond_tool.json
 ddee3414c2e1894a144acad55ab8590763c68377 data/minecraft/tags/blocks/needs_iron_tool.json
 ab9a4f757cd38503425bbd62e9a534b82e174570 data/minecraft/tags/blocks/needs_stone_tool.json
-0ce95cbc26d96885cd750cc82314fa3990963a28 data/minecraft/tags/blocks/planks.json
-86d6f02aaa08a3867ec0c214538f18ca6947e5c8 data/minecraft/tags/blocks/walls.json
+56d1744115d14003774bb8dbed5da0d844b25ee5 data/minecraft/tags/blocks/planks.json
+458ab303cdcab778bb197bc4ea87663cf07bf697 data/minecraft/tags/blocks/walls.json
 05c61ce2657b8dd5d300d745bf7d820165fa9bfc data/newmod/tags/blocks/metal_detector_valuables.json
 a3223f6b963747872f1cd5865b26225ecd757423 data/newmod/tags/blocks/needs_sapphire_tool.json

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "newmod:block/purple_log",
+    "side": "newmod:block/purple_log"
+  }
+}

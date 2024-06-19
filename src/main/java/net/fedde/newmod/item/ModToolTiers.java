@@ -15,6 +15,15 @@ public class ModToolTiers {
     public static final Tier SAPPHIRE = TierSortingRegistry.registerTier(
             new ForgeTier(5, 1500, 5f, 4f, 25,
                     ModTags.Blocks.NEEDS_SAPPHIRE_TOOL, () -> Ingredient.of(ModItems.SAPPHIRE.get())),
-            new ResourceLocation(NewMod.MOD_ID, "sapphire"), List.of(Tiers.NETHERITE), List.of());
+            new ResourceLocation(NewMod.MOD_ID, "sapphire"), List.of(Tiers.DIAMOND), List.of());
+
+    /**
+     * zelf gemaakt
+     */
+
+    public static final Tier PURPLE = TierSortingRegistry.registerTier(
+            new ForgeTier(5, 1500, 5f, 4f, 25,
+                    ModTags.Blocks.NEEDS_PURPLE_TOOL, () -> Ingredient.of(ModItems.SAPPHIRE.get())),
+            new ResourceLocation(NewMod.MOD_ID, "purple"), List.of(Tiers.NETHERITE), List.of());
 
 }

@@ -89,6 +89,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> STRIPPED_PINE_WOOD = registerBlock("stripped_pine_wood",
             () -> new ModFlammableRotatedPillerBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3)));
 
+
     public static final RegistryObject<Block> PINE_PLANKS = registerBlock("pine_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
                 @Override
@@ -135,10 +136,102 @@ public class ModBlocks {
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PINE));
 
     public static final RegistryObject<Block> PINE_SAPLING = registerBlock("pine_sapling",
-            () -> new SaplingBlock(new PineTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new PineTreeGrower("pine"), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> MOD_PORTAL = registerBlock("mod_portal",
             () -> new ModPortalBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noLootTable().noOcclusion().noCollission()));
+
+
+    /**
+     * zelf gemaakt
+     */
+
+    public static final RegistryObject<Block> PURPLE_LOG = registerBlock("purple_log",
+            () -> new ModFlammableRotatedPillerBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3)));
+    public static final RegistryObject<Block> PURPLE_WOOD = registerBlock("purple_wood",
+            () -> new ModFlammableRotatedPillerBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3)));
+    public static final RegistryObject<Block> STRIPPED_PURPLE_LOG = registerBlock("stripped_purple_log",
+            () -> new ModFlammableRotatedPillerBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3)));
+    public static final RegistryObject<Block> STRIPPED_PURPLE_WOOD = registerBlock("stripped_purple_wood",
+            () -> new ModFlammableRotatedPillerBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3)));
+
+    public static final RegistryObject<Block> PURPLE_PLANKS = registerBlock("purple_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+    public static final RegistryObject<Block> PURPLE_LEAVES = registerBlock("purple_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
+
+    public static final RegistryObject<Block> PURPLE_SIGN = BLOCKS.register("purple_sign",
+            () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.PURPLE));
+    public static final RegistryObject<Block> PURPLE_WALL_SIGN = BLOCKS.register("purple_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.PURPLE));
+
+    public static final RegistryObject<Block> PURPLE_HANGING_SIGN = BLOCKS.register("purple_hanging_sign",
+            () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.PURPLE));
+    public static final RegistryObject<Block> PURPLE_WALL_HANGING_SIGN = BLOCKS.register("purple_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PURPLE));
+
+    public static final RegistryObject<Block> PURPLE_SAPLING = registerBlock("purple_sapling",
+            () -> new SaplingBlock(new PineTreeGrower("purple"), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+
+    public static final RegistryObject<Block> PURPLE_STAIRS = registerBlock("purple_stairs",
+            () -> new StairBlock(() -> ModBlocks.SAPPHIRE_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> PURPLE_SLAB = registerBlock("purple_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> PURPLE_BUTTON = registerBlock("purple_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON), BlockSetType.IRON, 15, true));
+
+    public static final RegistryObject<Block> PURPLE_PRESSURE_PLATE = registerBlock("purple_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK),BlockSetType.IRON));
+
+    public static final RegistryObject<Block> PURPLE_FENCE = registerBlock("purple_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> PURPLE_FENCE_GATE = registerBlock("purple_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.IRON_DOOR_OPEN, SoundEvents.FENCE_GATE_CLOSE));
+
+    public static final RegistryObject<Block> PURPLE_WALL = registerBlock("purple_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> PURPLE_DOOR = registerBlock("purple_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noCollission(), BlockSetType.STONE));
+
+    public static final RegistryObject<Block> PURPLE_TRAPDOOR = registerBlock("purple_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noCollission(), BlockSetType.STONE));
+
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

@@ -3,6 +3,8 @@ package net.fedde.newmod;
 import com.mojang.logging.LogUtils;
 import net.fedde.newmod.block.ModBlocks;
 import net.fedde.newmod.block.entity.ModBlockEntities;
+import net.fedde.newmod.entity.ModEntities;
+import net.fedde.newmod.entity.client.ModBoatRenderer;
 import net.fedde.newmod.item.ModCreativeModTabs;
 import net.fedde.newmod.item.ModItems;
 import net.fedde.newmod.sound.ModSounds;
@@ -11,6 +13,7 @@ import net.fedde.newmod.villager.ModVillagers;
 import net.fedde.newmod.worldgen.biome.ModTerrablender;
 import net.fedde.newmod.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -42,6 +45,8 @@ public class NewMod {
         ModVillagers.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         ModSounds.register(modEventBus);
 
@@ -79,6 +84,10 @@ public class NewMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             Sheets.addWoodType(ModWoodTypes.PINE);
+            Sheets.addWoodType(ModWoodTypes.PURPLE);
+
+            EntityRenderers.register(ModEntities.MOD_BOAT.get(), pContext -> new ModBoatRenderer(pContext, false));
+            EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), pContext -> new ModBoatRenderer(pContext, true));
         }
     }
 }

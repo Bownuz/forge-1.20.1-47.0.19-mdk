@@ -3,6 +3,10 @@
     "newmod:pine_log",
     "newmod:pine_wood",
     "newmod:stripped_pine_log",
-    "newmod:stripped_pine_wood"
+    "newmod:stripped_pine_wood",
+    "newmod:purple_log",
+    "newmod:purple_wood",
+    "newmod:stripped_purple_log",
+    "newmod:stripped_purple_wood"
   ]
 }

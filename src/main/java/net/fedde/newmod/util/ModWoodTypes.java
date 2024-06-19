@@ -6,4 +6,10 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 
 public class ModWoodTypes {
     public static final WoodType PINE = WoodType.register(new WoodType(NewMod.MOD_ID + ":pine", BlockSetType.OAK));
+
+    /**
+     * zelf gemaakt
+     */
+
+    public static final WoodType PURPLE = WoodType.register(new WoodType(NewMod.MOD_ID + ":purple", BlockSetType.OAK));
 }
