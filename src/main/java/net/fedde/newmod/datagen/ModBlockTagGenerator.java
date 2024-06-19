@@ -78,5 +78,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PINE_PLANKS.get())
 
                 .add(ModBlocks.PURPLE_PLANKS.get());
+
+//        this.tag(ModTags.Blocks.CRAFTING_PURPLE_WOOD_TYPE)
+//                .add(ModBlocks.STRIPPED_PURPLE_LOG.get())
+//                .add(ModBlocks.PURPLE_LOG.get())
+//                .add(ModBlocks.STRIPPED_PURPLE_WOOD.get())
+//                .add(ModBlocks.PURPLE_WOOD.get());
     }
 }

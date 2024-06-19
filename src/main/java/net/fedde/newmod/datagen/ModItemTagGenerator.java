@@ -3,6 +3,7 @@ package net.fedde.newmod.datagen;
 import net.fedde.newmod.NewMod;
 import net.fedde.newmod.block.ModBlocks;
 import net.fedde.newmod.item.ModItems;
+import net.fedde.newmod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -45,5 +46,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.PINE_PLANKS.get().asItem())
 
                 .add(ModBlocks.PURPLE_PLANKS.get().asItem());
+
+        this.tag(ModTags.Items.CRAFTING_PURPLE_WOOD_TYPE)
+                .add(ModBlocks.STRIPPED_PURPLE_LOG.get().asItem())
+                .add(ModBlocks.PURPLE_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_PURPLE_WOOD.get().asItem())
+                .add(ModBlocks.PURPLE_WOOD.get().asItem());
     }
 }

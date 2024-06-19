@@ -4,6 +4,8 @@ import net.fedde.newmod.NewMod;
 import net.fedde.newmod.block.ModBlocks;
 import net.fedde.newmod.entity.ModEntities;
 import net.fedde.newmod.item.ModItems;
+import net.fedde.newmod.util.ModTags;
+import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
@@ -129,8 +131,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PURPLE_STAIRS.get(), 4)
-                .pattern("S")
-                .pattern("SS")
+                .pattern("S  ")
+                .pattern("SS ")
                 .pattern("SSS")
                 .define('S', ModBlocks.PURPLE_PLANKS.get())
                 .unlockedBy(getHasName(ModBlocks.PURPLE_PLANKS.get()), has(ModBlocks.PURPLE_PLANKS.get()))
@@ -142,6 +144,109 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ModBlocks.PURPLE_LOG.get())
                 .unlockedBy(getHasName(ModBlocks.PURPLE_LOG.get()), has(ModBlocks.PURPLE_LOG.get()))
                 .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STRIPPED_PURPLE_WOOD.get(), 3)
+                .pattern("SS")
+                .pattern("SS")
+                .define('S', ModBlocks.STRIPPED_PURPLE_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.STRIPPED_PURPLE_LOG.get()), has(ModBlocks.STRIPPED_PURPLE_LOG.get()))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PURPLE_PLANKS.get())
+                .requires(ModBlocks.PURPLE_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.PURPLE_LOG.get()), has(ModBlocks.PURPLE_LOG.get()))
+                .save(consumer, NewMod.MOD_ID + ":purple_planks_from_log");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PURPLE_PLANKS.get())
+                .requires(Ingredient.of(ModBlocks.PURPLE_WOOD.get()))
+                .unlockedBy(getHasName(ModBlocks.PURPLE_WOOD.get()), has(ModBlocks.PURPLE_WOOD.get()))
+                .save(consumer, NewMod.MOD_ID + ":purple_planks_from_wood");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PURPLE_PLANKS.get())
+                .requires(Ingredient.of(ModBlocks.STRIPPED_PURPLE_LOG.get()))
+                .unlockedBy(getHasName(ModBlocks.STRIPPED_PURPLE_LOG.get()), has(ModBlocks.STRIPPED_PURPLE_LOG.get()))
+                .save(consumer, NewMod.MOD_ID + ":purple_planks_from_stripped_log");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.PURPLE_PLANKS.get())
+                .requires(Ingredient.of(ModBlocks.STRIPPED_PURPLE_WOOD.get()))
+                .unlockedBy(getHasName(ModBlocks.STRIPPED_PURPLE_WOOD.get()), has(ModBlocks.STRIPPED_PURPLE_WOOD.get()))
+                .save(consumer, NewMod.MOD_ID + ":purple_planks_from_stripped_wood");
+
+
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PURPLE_HELMET.get())
+//                .pattern("SSS")
+//                .pattern("S S")
+//                .define('S', ModBlocks.PURPLE_PLANKS.get())
+//                .unlockedBy(getHasName(ModBlocks.PURPLE_PLANKS.get()), has(ModBlocks.PURPLE_PLANKS.get()))
+//                .save(consumer);
+//
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PURPLE_CHESTPLATE.get())
+//                .pattern("S S")
+//                .pattern("SSS")
+//                .pattern("SSS")
+//                .define('S', ModBlocks.PURPLE_PLANKS.get())
+//                .unlockedBy(getHasName(ModBlocks.PURPLE_PLANKS.get()), has(ModBlocks.PURPLE_PLANKS.get()))
+//                .save(consumer);
+//
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PURPLE_LEGGINGS.get())
+//                .pattern("SSS")
+//                .pattern("S S")
+//                .pattern("S S")
+//                .define('S', ModBlocks.PURPLE_PLANKS.get())
+//                .unlockedBy(getHasName(ModBlocks.PURPLE_PLANKS.get()), has(ModBlocks.PURPLE_PLANKS.get()))
+//                .save(consumer);
+//
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PURPLE_BOOTS.get())
+//                .pattern("S S")
+//                .pattern("S S")
+//                .define('S', ModBlocks.PURPLE_PLANKS.get())
+//                .unlockedBy(getHasName(ModBlocks.PURPLE_PLANKS.get()), has(ModBlocks.PURPLE_PLANKS.get()))
+//                .save(consumer);
+
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PURPLE_AXE.get())
+//                .pattern("SS ")
+//                .pattern("ST ")
+//                .pattern(" T ")
+//                .define('S', ModBlocks.PURPLE_PLANKS.get())
+//                .define('T', Items.STICK)
+//                .unlockedBy(getHasName(ModBlocks.PURPLE_PLANKS.get()), has(ModBlocks.PURPLE_PLANKS.get()))
+//                .save(consumer);
+//
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PURPLE_PICKAXE.get())
+//                .pattern("SSS")
+//                .pattern(" T ")
+//                .pattern(" T ")
+//                .define('S', ModBlocks.PURPLE_PLANKS.get())
+//                .define('T', Items.STICK)
+//                .unlockedBy(getHasName(ModBlocks.PURPLE_PLANKS.get()), has(ModBlocks.PURPLE_PLANKS.get()))
+//                .save(consumer);
+//
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PURPLE_SWORD.get())
+//                .pattern(" S ")
+//                .pattern(" S ")
+//                .pattern(" T ")
+//                .define('S', ModBlocks.PURPLE_PLANKS.get())
+//                .define('T', Items.STICK)
+//                .unlockedBy(getHasName(ModBlocks.PURPLE_PLANKS.get()), has(ModBlocks.PURPLE_PLANKS.get()))
+//                .save(consumer);
+//
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PURPLE_HOE.get())
+//                .pattern("SS ")
+//                .pattern(" T ")
+//                .pattern(" T ")
+//                .define('S', ModBlocks.PURPLE_PLANKS.get())
+//                .define('T', Items.STICK)
+//                .unlockedBy(getHasName(ModBlocks.PURPLE_PLANKS.get()), has(ModBlocks.PURPLE_PLANKS.get()))
+//                .save(consumer);
+//
+//        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PURPLE_SHOVEL.get())
+//                .pattern(" S ")
+//                .pattern(" T ")
+//                .pattern(" T ")
+//                .define('S', ModBlocks.PURPLE_PLANKS.get())
+//                .define('T', Items.STICK)
+//                .unlockedBy(getHasName(ModBlocks.PURPLE_PLANKS.get()), has(ModBlocks.PURPLE_PLANKS.get()))
+//                .save(consumer);
 
     }
 

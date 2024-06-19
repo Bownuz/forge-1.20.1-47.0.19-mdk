@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "newmod:purple_planks"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "TST",
+    "TST"
+  ],
+  "result": {
+    "item": "newmod:purple_fence_gate"
+  },
+  "show_notification": true
+}
