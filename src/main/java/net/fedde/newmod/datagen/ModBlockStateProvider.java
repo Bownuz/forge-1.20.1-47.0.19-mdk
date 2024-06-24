@@ -117,6 +117,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DEEPSLATE_RUBY_ORE);
         blockWithItem(ModBlocks.NETHER_RUBY_ORE);
         blockWithItem(ModBlocks.END_STONE_RUBY_ORE);
+
+        blockWithItem(ModBlocks.SOIL);
+        blockWithItem(ModBlocks.SOIL_DARK);
     }
 
     public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {

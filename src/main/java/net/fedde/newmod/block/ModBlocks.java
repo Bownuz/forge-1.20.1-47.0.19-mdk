@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -254,6 +255,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_STONE_RUBY_ORE = registerBlock("ruby_end_stone_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of( 3, 6)));
+
+
+
+
+    public static final RegistryObject<Block> SOIL = registerBlock("soil",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+
+    public static final RegistryObject<Block> SOIL_DARK = registerBlock("soil_dark",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
 
 
 

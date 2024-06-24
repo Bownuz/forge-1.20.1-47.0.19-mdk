@@ -143,6 +143,9 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
                         output.accept(ModBlocks.NETHER_RUBY_ORE.get());
                         output.accept(ModBlocks.END_STONE_RUBY_ORE.get());
+
+                        output.accept(ModBlocks.SOIL.get());
+                        output.accept(ModBlocks.SOIL_DARK.get());
                     })
                     .build());
 

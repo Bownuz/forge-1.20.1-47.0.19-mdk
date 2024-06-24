@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-19T16:46:02.0186649	Block States: newmod
+// 1.20.1	2024-06-20T17:04:00.2907026	Block States: newmod
 f52ca4ee74892b411c612d4e7cdbbd77131f2d71 assets/newmod/blockstates/mod_portal.json
 2e95d96f95bc585b41849fac649a32fedad0d245 assets/newmod/blockstates/pine_hanging_sign.json
 9795ec19d8dbe8da298131d733b794e9149f7c4e assets/newmod/blockstates/pine_leaves.json
@@ -48,6 +48,8 @@ ed909a4c50530635e6a6f5426b39b2b3925b2bae assets/newmod/blockstates/sapphire_slab
 493b26125a332928a8ca5c66854b6152dad5013a assets/newmod/blockstates/sapphire_stairs.json
 017f1480762ca0f51519969cc4d441e2ef498e8b assets/newmod/blockstates/sapphire_trapdoor.json
 e3d60edaa3d4a174d0b9bc36d311c9e0ae67099b assets/newmod/blockstates/sapphire_wall.json
+32f69c7ea2b75c7aa1e4ddab062f289b51bb3758 assets/newmod/blockstates/soil.json
+6a097994378284cf8d3140b5438e51c83dd9a4bf assets/newmod/blockstates/soil_dark.json
 715635d3c1fb37ec8c816b20fa4758b2b547b5e0 assets/newmod/blockstates/sound_block.json
 2eba321ea12df085deb9bbd1b85828d89c9b049e assets/newmod/blockstates/stripped_pine_log.json
 4b9d47de48d70eef0d15aef8b0bf1639ef2f8fbf assets/newmod/blockstates/stripped_pine_wood.json
@@ -142,6 +144,8 @@ cbd114c80412f8be2dbe1a11e8ef5372e779d77d assets/newmod/models/block/sapphire_tra
 2bf6c923159f6abf6155a8040dc7d73356fe4bd8 assets/newmod/models/block/sapphire_wall_post.json
 1def9d99c3133377b7277e52a7971de4c8f785f6 assets/newmod/models/block/sapphire_wall_side.json
 3037a67e3d48aaec1b938111096ca98dfefb8de0 assets/newmod/models/block/sapphire_wall_side_tall.json
+f8bc46f75fd6be2a79e4a8129248c9e4f372fa19 assets/newmod/models/block/soil.json
+1098c6b2b0cf6708723869ee4be88283e019e14c assets/newmod/models/block/soil_dark.json
 e1556cd8f432d3390b6b738e4ce7ea614b7c170c assets/newmod/models/block/sound_block.json
 76a2afc6f1281fa486456cf8bc75d5add93f2745 assets/newmod/models/block/stripped_pine_log.json
 4ad144484ec5731ac261ae2dd797ff8f1656c419 assets/newmod/models/block/stripped_pine_log_horizontal.json
@@ -172,6 +176,8 @@ ff1ff22e9177eedb6508127b4f23c5f46fdce836 assets/newmod/models/item/sapphire_deep
 9b513bed43f83e323604b0c818f8c6e706d6f2d6 assets/newmod/models/item/sapphire_nether_ore.json
 715ba5edebd4711b4f662bb92c478bb6b1ddce88 assets/newmod/models/item/sapphire_ore.json
 b84daf12b84bdf900890db9b9bcbc50303555d59 assets/newmod/models/item/sapphire_raw_block.json
+84250a5760c81aab5d73d3abb6f6bc09b54ac553 assets/newmod/models/item/soil.json
+7c8ca858456ffe0a98e6e78a19289e55dc584a79 assets/newmod/models/item/soil_dark.json
 ba952d792523f7c00fbb452d8a6f0e836f400e56 assets/newmod/models/item/sound_block.json
 f4b04f6dab664e5bf7890e81903582449fa6db35 assets/newmod/models/item/stripped_pine_log.json
 295ed9cb5e6e49686566e41803b08416eddfd15d assets/newmod/models/item/stripped_pine_wood.json

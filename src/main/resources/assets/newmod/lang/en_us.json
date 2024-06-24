@@ -104,16 +104,19 @@
   "block.newmod.purple_door": "Purple Door",
   "block.newmod.purple_trapdoor": "Purple Trapdoor",
 
-  "item.newmod.ruby": "Ruby",
-  "item.newmod.ruby_raw": "Raw Ruby",
-
-  "block.newmod.ruby_block": "Block of Ruby",
-  "block.newmod.ruby_raw_block": "Block of Raw Ruby",
+  "block.newmod.soil": "Soil",
+  "block.newmod.soil_dark": "Dark Soil",
 
   "block.newmod.ruby_ore": "Ruby Ore",
   "block.newmod.ruby_deepslate_ore": "Deepslate Ruby Ore",
   "block.newmod.ruby_nether_ore": "Nether Ruby Ore",
   "block.newmod.ruby_end_stone_ore": "Endstone Ruby Ore",
+
+  "item.newmod.ruby": "Ruby",
+  "item.newmod.ruby_raw": "Raw Ruby",
+
+  "block.newmod.ruby_block": "Block of Ruby",
+  "block.newmod.ruby_raw_block": "Block of Raw Ruby",
 
   "item.newmod.ruby_sword": "Ruby Sword",
   "item.newmod.ruby_pickaxe": "Ruby Pickaxe",

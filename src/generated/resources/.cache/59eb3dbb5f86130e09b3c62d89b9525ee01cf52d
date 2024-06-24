@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-19T16:46:02.0216551	Loot Tables
+// 1.20.1	2024-06-20T17:04:00.2946904	Loot Tables
 7fa08b6273a6078385112ed0d3314935be32ff2a data/newmod/loot_tables/blocks/pine_hanging_sign.json
 7064b888d02fcf9b4be9519b3da046992ff302bc data/newmod/loot_tables/blocks/pine_leaves.json
 d1df5ac62b4aa6d154a1d5dbe76250658b3d6ed6 data/newmod/loot_tables/blocks/pine_log.json
@@ -47,6 +47,8 @@ e932e641c0e61a4d1d18aa4d41e64c353d725ddd data/newmod/loot_tables/blocks/sapphire
 365fd4a7172099487c91f4935b16f85203ccaf3e data/newmod/loot_tables/blocks/sapphire_stairs.json
 5b0c9a79d19fe4690437e9424f399735ab8e11ef data/newmod/loot_tables/blocks/sapphire_trapdoor.json
 cd23c1f45c6f69add4912399a7efcbbd0f30818c data/newmod/loot_tables/blocks/sapphire_wall.json
+023d03727f8316af93f42917e665d1e292ec9e44 data/newmod/loot_tables/blocks/soil.json
+03d3318a0bbc8bb8685402eefe0e3028524b8d6b data/newmod/loot_tables/blocks/soil_dark.json
 ea807e23b1b6be80773ac5c2cb05585858a5ed0e data/newmod/loot_tables/blocks/sound_block.json
 65c7ae61f07d0beab56ca688abbadec294e50e6f data/newmod/loot_tables/blocks/stripped_pine_log.json
 1b8080e68ed92202f152f897b004fa811a67d136 data/newmod/loot_tables/blocks/stripped_pine_wood.json

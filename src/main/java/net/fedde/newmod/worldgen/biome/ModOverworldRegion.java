@@ -6,8 +6,10 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.Climate;
+import terrablender.api.ParameterUtils;
 import terrablender.api.Region;
 import terrablender.api.RegionType;
+import terrablender.api.VanillaParameterOverlayBuilder;
 
 import java.util.function.Consumer;
 
@@ -19,8 +21,18 @@ public class ModOverworldRegion extends Region {
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint,
             ResourceKey<Biome>>> mapper) {
-//       this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
+//        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
 //           modifiedVanillaOverworldBuilder.replaceBiome(Biomes.FOREST, ModBiomes.WARPED_BIOME);
-//       });
+//            VanillaParameterOverlayBuilder builder = new VanillaParameterOverlayBuilder();
+//            new ParameterUtils.ParameterPointListBuilder()
+//                    .temperature(ParameterUtils.Temperature.span(ParameterUtils.Temperature.COOL, ParameterUtils.Temperature.FROZEN))
+//                    .humidity(ParameterUtils.Humidity.span(ParameterUtils.Humidity.ARID, ParameterUtils.Humidity.DRY))
+//                    .erosion(ParameterUtils.Erosion.span(ParameterUtils.Erosion.EROSION_0, ParameterUtils.Erosion.EROSION_1))
+//                    .depth(ParameterUtils.Depth.span(ParameterUtils.Depth.SURFACE, ParameterUtils.Depth.FLOOR))
+//                    .weirdness(ParameterUtils.Weirdness.span(ParameterUtils.Weirdness.MID_SLICE_NORMAL_ASCENDING, ParameterUtils.Weirdness.MID_SLICE_NORMAL_DESCENDING))
+//                    .build().forEach(parameterPoint -> builder.add(parameterPoint, ModBiomes.WARPED_BIOME));
+
+//            builder.build().forEach(mapper::accept);
+//        });
     }
 }
